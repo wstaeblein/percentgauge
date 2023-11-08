@@ -39,7 +39,7 @@
 
             let compressor = 0.75;
             let width = container.clientWidth - (configs.thickness * 2);
-            let fitSize = Math.max(Math.min(width / (compressor * 9), 200), 12); console.log('FITSIZE: ' + fitSize, container.clientHeight)
+            let fitSize = Math.max(Math.min(width / (compressor * 9), 200), 12);
             container.style.setProperty('--valueFontSize', fitSize + 'px');
             container.style.setProperty('--legendFontSize', (fitSize * 0.6) + 'px');
             text.style.color = configs.textColor || configs.color;
@@ -52,17 +52,6 @@
             gauge.style.setProperty('--angle', 45 + degrees + 'deg');            
         }        
     }
-/* 
-    function setNumber() {
-        if (gauge) {
-            let val = value < 0 ? 0 : value > 100 ? 100 : value;
-            showVal = (configs.valueOverflow ? value : val).toFixed(configs.decimals); 
-            if (!configs.enforceDecimals && +showVal == parseInt(showVal)) { showVal = showVal.slice(0, -3); }
-
-            let degrees = Math.round((val / 100) * 180);
-            gauge.style.setProperty('--angle', 45 + degrees + 'deg');            
-        }
-    } */
 
 </script>
 
