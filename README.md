@@ -10,7 +10,7 @@ This component uses only CSS to generate an animated semi circle percent based g
 ![Example](public/sample.png)
 
 
-[CHECK OUT THE ONLINE DEMO](https://wstaeblein.github.io/circlebar/)
+[CHECK OUT THE ONLINE DEMO](https://wstaeblein.github.io/percentgauge/)
 
 ## Usage
 
