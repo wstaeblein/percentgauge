@@ -59,7 +59,7 @@
 
 <style>
     .checks {
-        width: 190px;
+        width: 200px;
         text-align: left;
         margin: auto;
     }
