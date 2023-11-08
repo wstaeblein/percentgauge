@@ -1,0 +1,82 @@
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+    color: #efefef;
+	background-color: #222230;
+	margin: 0;
+	padding: 5px;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --circlebar-text: #aaa;
+    --circlebar-track: #222;
+}
+
+a {
+	color: rgb(0,100,200);
+	text-decoration: none;
+}
+
+a:visited {
+	color: rgb(0,80,160);
+}
+
+label {
+	display: block;
+}
+
+input, button, select, textarea {
+	font-family: inherit;
+	font-size: inherit;
+	-webkit-padding: 0.4em 0;
+	padding: 0.4em;
+	margin: 0 0 0.5em 0;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+}
+
+input:disabled {
+	color: #ccc;
+}
+
+button {
+    border: 1px solid #000;
+    background: #eee;
+    color: crimson;
+    text-transform: uppercase;
+    font-size: smaller;
+    font-weight: bold;
+    padding: 10px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+button:disabled {
+	color: #999;
+}
+
+button:not(:disabled):active {
+	background-color: #ddd;
+}
+
+button:focus {
+	border-color: crimson;
+}
+
+@media (hover: hover) {
+    button:hover {
+        background: crimson;
+        color: #fff;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
