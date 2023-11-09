@@ -47,6 +47,7 @@
             let val = value < 0 ? 0 : value > 100 ? 100 : value;
             showVal = (configs.valueOverflow ? value : val).toFixed(configs.decimals); 
             if (!configs.enforceDecimals && +showVal == parseInt(showVal)) { showVal = showVal.slice(0, -3); }
+            showVal = (+showVal).toLocaleString();
 
             let degrees = Math.round((val / 100) * 180);
             gauge.style.setProperty('--angle', 45 + degrees + 'deg');            
